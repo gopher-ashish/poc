@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	rgx "github.com/PersonalGithubAccount/poc/html-web-scapping/regex_operation"
+	rgx "github.com/PersonalGithubAccount/poc/html-web-scraping/regex_operation"
 )
 
 func CrawlingPage(url string) ([]string, error) {

@@ -1,4 +1,4 @@
-module github.com/PersonalGithubAccount/poc/html-web-scapping
+module github.com/PersonalGithubAccount/poc/html-web-scraping
 
 go 1.16
 
