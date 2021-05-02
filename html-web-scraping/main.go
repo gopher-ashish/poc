@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PersonalGithubAccount/poc/html-web-scraping/crawl"
+	crawl "poc/crawl"
 
 	log "github.com/sirupsen/logrus"
 )

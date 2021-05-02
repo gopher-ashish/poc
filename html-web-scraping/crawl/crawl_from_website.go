@@ -4,9 +4,8 @@ import (
 	"errors"
 	"io/ioutil"
 	"net/http"
+	"poc/regex_operation"
 	"time"
-
-	rgx "github.com/PersonalGithubAccount/poc/html-web-scraping/regex_operation"
 )
 
 func CrawlingPage(url string) ([]string, error) {
@@ -43,7 +42,7 @@ func validateResponseAndRetriveNumbers(resp *http.Response) ([]string, error) {
 		return nil, err
 	}
 
-	numbers := rgx.GetPhoneNumbers(pageContent)
+	numbers := regex_operation.GetPhoneNumbers(pageContent)
 	if numbers == nil || len(numbers) < 1 {
 		return nil, errors.New("no numbers found")
 	}

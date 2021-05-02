@@ -1,4 +1,4 @@
-module github.com/PersonalGithubAccount/poc/html-web-scraping
+module poc
 
 go 1.16
 
